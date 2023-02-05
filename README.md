@@ -12,7 +12,7 @@ I learnt that CSS create the flow and style of the webpage by editing the font s
 
 Javascript gives interactivity to the webpage, with else if statements which allow different scenarios to play out depending on how the user interacts with the webpage... or randomly with functions like math.random.
 
-GitHub is a space which allows programers to show their work to each other or to work on the same project together, even at the same time, without interuptting each others flow.1
+GitHub is a space which allows programers to show their work to each other or to work on the same project together, even at the same time, without interuptting each others flow.
 
 ## Installation
 

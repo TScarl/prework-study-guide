@@ -17,20 +17,29 @@
       <section class="card" id="html-section">
         <h2>HTML</h2>
         <ul>
-          <li>The head element contains information about the webpage.</li>
-          <li>The body element represents the visible content shown to the user.</li>
-          <li>You can create headings for sections with h1 through to h6, with h1 being the biggest.</li>
-          <li>img stands for image, src stands for source, alt gives a caption of the image.</li>
+          <li> All documents should start with a !DOCTYPE Declaration. </li>
+          <li> html is the parent element to an entire HTML document. </li>
+          <li> The head element contains information about the webpage, that is not displayed on the interface (e.g. linking HTML and CSS).</li>
+          <li> The body element represents the visible content shown to the user.</li>
+          <li> The following are all children of the body element: header, main, footer, script </li>
+          <li> The header is used for creating the heading. Every HTML document should only contain one h1 element, which is generally found in the header. img elements can also be found in the header.
+          <li> Headings can be created with h1, h2, h3, h4, h5 and h6, with h1 being the largest.</li>
+          <li> The main element will be made of sections or paragraphs (section or p). Sections will display the bulk of information available to the user. They can contain their own headings (header) or ordered/unordered lists (ul/ol) which are given bullet points via li </li>
+          <li> Sections can have classes and ids set for them with the tags class = “...” and id = “...” 
+          <li>To place images within a webpage, the element img is used. src says where the img is sourced from, and alt gives a caption of the image (useful for visually-impaired or poor internet connection). E.g. img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." </li> 
         </ul>
       </section>
       <section class="card" id="css-section">
         <h2>CSS</h2>
         <ul>
-          <li>A margin indicates how much space we want around the outside of an element.</li>
-          <li>A padding indicates how much space we want around the content inside an element.</li>
-          <li>Css box model includes: margin, border, padding and content.</li>
-          <li>DRY (do not repeat yourself) If you have two selectors that will be affected by the same declarations, you can put them together with a comma, and only have to write the declaration once.</li>
-        </ul>
+          <li> CSS is used to style a webpage, by allowing you to select individual (or multiple (DRY)) tags (e.g. header, footer, img, ul, h1) or classes/ids (if you set them).
+          <li> DRY (do not repeat yourself) If you have two selectors that will be affected by the same declarations, you can put them together with a comma, and only have to write the declaration once (e.g. header, footer {width:100%;}).</li>
+          <li> The CSS box model includes: margin, border, padding and content.</li>
+          <li> The elements of the box model can be set to centre their contents or to push them more toward one side of the webpage (e.g. padding: 0,40,0,40; will create distance on the left and right of its contents but nothing above/below. The above is the long way of writing padding: 0,40).
+          <li> The elements of the css box model can also be set to a default by use of commands like margin-left: auto;. </li>
+          <li> Other things you can style are: width, height, color and background-color, display or transparency (box-shadow) of the text. </li>
+          </ul>
+          <img src ="./assets/boxmodel.png" alt = "representation of a box model">
       </section>
       <section class="card" id="git-section">
         <h2>Git</h2>
@@ -38,24 +47,26 @@
           <li>git status: checks what branch we are currently on</li>
           <li>git checkout -b branch-name (e.g. feature/add-html): creates a new branch and switches to it</li>
           <li>git add -A: will add the changes you've created in VS code to the branch you are in</li>
-          <li>git commit -m "<your message>" will attach a message to the branch you're in</li>
+          <li>git commit -m "your message" will attach a message to the branch you're in</li>
           <li>git pull origin main: will pull the main branch into the feature branch</li>
           <li>git push origin feature/...: will push your branch onto your github account</li>
           <li>cd: stands for change directory, it changes the branch you are in, e.g. cd main will put you into the main branch</li>
         </ul>
       </section>
-   
       <section class="card" id="javascript-section">
         <h2>JavaScript</h2>
         <ul>
-          <li>A variable is a named container that allows us to store data in our code.</li>
-          <li>Variables/values are items which the code can change based upon user interactivity with the webpage. Not all parts of the code will be used if the program doesnt recive the necessary input.</li>
-          <li>Control flow is the order in which a computer executes code in a script. The flow is read from top to bottom.</li>
-          <li>Js creates interactivity, allowing features onto the webpage, e.g......</li>li>
+          <li>Control flow is the order in which a computer executes code in a script. The flow is read from top to bottom. This is particularly important for something like else if statements because once the code finds the first true Boolean, it will influence what appears on the webpage.</li>
+          <li> Some common elements within JS are: var (variable), function, if/else if, and console.log. </li>
+          <li> variables are used to make containers interactive, e.g. the code var topics = ['HTML', 'CSS', 'Git', 'JavaScript']; enables these four classes to become interactive by making them all a topic which can be selected randomly or by user selection.</li>
+          <li>Variables/values are items which the code can change based upon user interactivity with the webpage. Not all parts of the code will be used if the program doesn’t receive the necessary input.</li>
+          <li> The code var randomTopic = topics[Math.floor(Math.random() * topics.length)]; creates a variable named randomTopic whose function is to randomly assign a number to the variable topics.</li>
+          <li> functions are commands that already exist, two of them are listTopics and selectTopic, they are used to tell the terminal what function it is going to perform. Then the function is given a command like an else if statement so it knows what method to use to perform its function.</li>
+          <li> console.log statements are statements which may appear on the webpage, e.g. an else if statement may have multiple console.log statements, only the else if command which is truthy will have its console.log statement appear.</li>
+          <li> else if statements all begin with an if, are followed with an else if and are finished with and else. The finishing else statement will be printed on the screen if none of the else if statements are truthy.
         </ul>
       </section>
     </main>
-
     <footer>
       <p>I can code!</p>
     </footer>
